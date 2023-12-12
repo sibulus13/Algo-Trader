@@ -7,15 +7,17 @@ import ta
 from alpaca_trade_api.rest import REST, TimeFrame
 import os
 from sklearn.preprocessing import MinMaxScaler, maxabs_scale
+import os
 
-FMP_API_KEY = "45d2c43abf8e1e4ba47884a88f378027"
-POLYGON_KEY = "AVs1KTDp0aDoioS_EQ2KN63JiIyTaKLf"
-FINNHUB_KEY = "ceivrvqad3if39n22g3gceivrvqad3if39n22g40"
-TWELVEDATA_KEY = "deb706049cdd47058e1210eacc3aefa5"
-ALPHA_VANTAGO_KEY = "PX771WNGSYWHEKLW"
-NASDAQ_DATA_LINK_KEY = 'ouH2XbhJ1k9zz-6KtKPz'
-ALPACA_API_KEY = 'PKNHYYQ7OUDKJK3NP6EX'
-ALPACA_S_KEY = 'zo3qv6aUJJI14aSY2AgUOfuDufcapDx6yFBBixGD'
+FMP_API_KEY = os.environ.get('FMP_API_KEY')
+POLYGON_KEY = os.environ.get('POLYGON_KEY')
+FINNHUB_KEY = os.environ.get('FINNHUB_KEY')
+TWELVEDATA_KEY = os.environ.get('TWELVEDATA_KEY')
+ALPHA_VANTAGO_KEY = os.environ.get('ALPHA_VANTAGE_KEY')
+NASDAQ_DATA_LINK_KEY = os.environ.get('NASDAQ_DATA_LINK_KEY')
+ALPACA_API_KEY= os.environ.get('ALPACA_API_KEY')
+ALPACA_S_KEY= os.environ.get('ALPACA_S_KEY')
+
 ALPACA_BASE_URL = 'https://data.alpaca.markets/v2'
 
 DATASET_DIR = r'D:\repo\stonks\data\dataset'
